@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var guessedNumber: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +22,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func checkGuess(_ sender: Any) {
+        print( "A guess was made.")
+        print("<#T##items: Any...##Any#>")
+    }
 }
 
