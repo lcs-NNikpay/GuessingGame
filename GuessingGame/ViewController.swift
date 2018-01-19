@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var guessedNumber: UITextField!
     
+    @IBOutlet weak var buttonPlayAgain: UIButton!
     // MARK Properties
     var game = GuessingGame()
     
@@ -53,6 +54,8 @@ class ViewController: UIViewController {
         // Use the model to check whether the guess is correct
         // if-else if-else
         labelMessage.text = game.compareNumbers(guessMade: number)
+    }
+    @IBAction func resetGame(_ sender: Any) {
     }
 }
 
